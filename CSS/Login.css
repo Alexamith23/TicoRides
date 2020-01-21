@@ -1,0 +1,102 @@
+body
+{
+	margin:0;
+	padding:0;
+	background-color:#94D3E3;
+}
+form
+{
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	background-color:white;
+	width:300px;
+	height:500px;
+	border-radius:10px;
+	box-sizing:border-box;
+	padding: 150px 23px;
+}
+img
+{
+	position:absolute;
+	padding: 0 55px;
+	top:-50px;
+}
+.entradas
+{
+	position:relative;
+	border:none;
+	font-size:20px;
+	width: 250px; height:50px;
+	border-radius:5px;
+	padding:20;
+	margin-bottom:50px;
+	bottom:20px;
+}
+.buttonF
+{
+	position:relative;
+	bottom:20px;
+	border:none;
+	font-size:20px;
+	font-family:Franklin Gothic Demi;
+	border-radius:5px;
+	outline:none;
+	width: 250px; height:50px;
+	background-color:green;
+	color:white;
+	margin-bottom:30px;
+}
+a
+{
+	position:relative;
+	font-size:10px;
+	font-family:Franklin Gothic Demi;
+	color:white;
+	padding:0px;
+	margin-bottom:60px;
+	bottom:20px;
+}
+.Entrar
+{
+	width: 250px; height:50px;
+}
+
+
+
+
+.button
+{
+	position:relative;
+	border-radius:5px;
+	background:green;
+	color:#fff;
+	display:inline-block;
+	font-size:20px;
+	margin:20px;
+	padding:10px 0;
+	text-align:center;
+	width: 250px; height:30px;
+	text-decoration:none;
+	box-shadow: 0px 3px 0px #373c3c;
+	margin-left:50px;
+	margin-right:50px;
+	right:48px;
+	top:-40px;
+}
+
+
+
+.loguinResponsive
+{
+
+	
+}
+
+
+
+
+
+
+

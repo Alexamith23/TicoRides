@@ -1,0 +1,287 @@
+
+body
+{
+	
+	background-color:#94D3E3;
+}
+
+header
+{
+	position: absolute;
+	width:102.9%;
+	margin-top:-1.5%;
+	height: 30px;
+	left: -40px;
+}
+
+nav
+{
+	margin:20px auto;
+	width:100%;
+
+}
+nav ultra-condensed
+{
+	list-style:none;
+}
+nav > ul
+{
+		display:table;
+		overflow:hidden;
+		width:100%;
+		height: 50px;
+		position:relative;
+}
+nav > ul li
+{
+	display:table-cell;
+}
+nav > ul li a
+{
+	color:rgb(146, 142, 142);
+	background-color:white;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	position:relative;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav > ul > li a span
+{
+	background:#174459;
+	display:block;
+	height:100%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top:-55px ;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav > ul > li > a span .icon
+{
+	display:block;
+	line-height:60px;
+}
+
+nav > ul > li > a:hover > span
+{
+	top:0;
+}
+nav ul li a .primero
+{
+	background:#C2A24A;
+}
+nav ul li a .segundo
+{
+	background:#5da5a2;
+}
+nav ul li a .tercero
+{
+	background:#f25724;
+}
+nav ul li a .cuarto
+{
+	background:#96C544;
+}
+
+
+
+.formularioBuscar
+{
+	border-radius:5px;
+	margin-left:67px;
+	margin-top:25px;
+	background-color:#363636;
+	width:1228px;
+	height:100px;
+}
+
+
+.botonBuscar
+{
+	background-color:white;
+	color:black;		
+	border-radius:5px;
+	font-family:Franklin Gothic Demi;
+	font-size:20px;
+	padding:20px;
+	position:relative;
+	text-align:center;
+	height:5px;
+	width:190px;
+	margin: 20px;
+	left: 30px;
+	top: 20px;
+}
+
+.button
+{
+	border-radius:5px;
+	background:green;
+	color:#fff;
+	display:inline-block;
+	font-size:20px;
+	padding:10px 0;
+	text-align:center;
+	width:190px;
+	text-decoration:none;
+	box-shadow: 0px 3px 0px #373c3c;
+	position:relative;
+	margin: 20px;
+	left: 30px;
+	top: 20px;
+}
+
+.button span
+{
+	margin-right:10px;
+}
+
+.button.blue
+{
+	background:#3678A7;
+	box-shadow: 0px 3px 0px #266792; 
+}
+
+
+.encabezado
+{
+	margin-top:50px;
+	font-size:50px;
+}
+
+
+
+.busqueda
+{
+	position: absolute;
+	background: white;
+	width: 300px;
+	height: 300px;
+	left: 900px;
+	top: 220px;
+	border-radius: 15px;
+}
+
+.titulo
+{
+	position: relative;
+	left: 1280px;
+	top: 20px;
+}
+
+.Bsalir
+{
+	background-color: tomato;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 12px;
+	font-size: 12px;
+}
+
+.linkSalir a
+{
+text-decoration: none;
+color: black;
+display: block;
+padding: 13px;
+}
+
+.linkSalir
+{
+	background-color:white ;
+	width: 150px;
+	display: none;
+}
+.linkSalir a:hover
+{
+	background-color:teal;
+}
+.salir:hover .linkSalir
+{
+	display: block;
+}
+.salir
+{
+	position: relative;
+	left: 1190px;
+	bottom: 70px;
+}
+
+#tbrides
+{
+	width: 800%px;
+}
+#title
+{
+	position: absolute;
+	left: 620px;
+	top: 90px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 50px;
+}
+.divTabla
+{
+	position: absolute;
+	top:175px;
+	left: 20px;
+}
+#tbrides
+{
+	width: 700px;
+	top: 50px;
+}
+table
+{
+	position:relative;
+	border-radius:5px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align:left;
+	border-collapse:collapse;
+	background-color:white;
+	width:70%;
+	bottom:40px;
+}
+th,td
+{
+	padding:20px; 
+}
+thead
+{
+	background-color:#3678A7;
+	border-bottom:solid 5px #0F362D;
+	color:white;
+}
+tr:nth-child(even)
+{
+	background-color:#ddd;
+}
+
+tr:hover td
+{
+	background-color:#83BCE4;
+	color:white;
+}
+.decoracion
+{
+	position: absolute;
+	top: 50px;
+}
+
+.tabla_panel
+{
+	position: absolute;
+	left:70px;
+	top: 5px;
+}

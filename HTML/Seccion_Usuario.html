@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Usuario</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="D:\Desktop\l_Proyecto_web\boostrap\bootstrap-4.4.1-dist\css\bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="D:\Desktop\l_Proyecto_web\CSS\Seccion_Usuario.css">
+	<link rel="stylesheet" type="text/css" href="D:\Desktop\l_Proyecto_web\Imagenes\fonts\style.css">
+
+</head>
+
+<body onload="llenarTabla();cambiarNombre()">
+	<div class="responsive">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#"><span class="primero"> <i class="icon icon-home"></i></span>Inicio</a></li>
+				<li><a href="D:\Desktop\l_Proyecto_web\HTML\CRUD_rides.html"><span class="cuarto"><i class="icon icon-document"></i></span>CRUD</a></li>	
+				<li><a href="D:\Desktop\l_Proyecto_web\HTML\Configuracion.html"><span class="segundo"><i class="icon icon-cog"></i></span>Perfil</a></li>							
+			</ul>
+		<nav>
+	</header>
+	<div class="responsive tab">
+		<h1 id="title">TicoRides</h1>
+	</div>
+	<div class="decoracion">
+		<div class="titulo">	
+			<img src ="D:\Desktop\l_Proyecto_web\Imagenes\hombre (1).png" >
+			<p id="cambiar">Usuario</p>
+		</div>
+
+		<div class = "salir">
+			<button class="Bsalir">Opcion</button>
+			<div class="linkSalir">
+			<a href="D:\Desktop\l_Proyecto_web\HTML\Log_in.html">Cerrar seción</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="tabla_panel">
+		<div class="busqueda">
+			<div class="moverBuscar">
+				<input class="botonBuscar" placeholder="Salida"; id="d"/> <br>
+				<input class="botonBuscar" placeholder="Llegada"; id="h"/><br>
+				<a href="javascript:hacerBusqueda()" class="button"><span class="icon-magnifying-glass"></span>Buscar</a>				
+			</div>
+		</div>
+		<div class = "divTabla">
+			<center>
+				<table id="tbrides">
+					<thead>
+						<tr>
+							<th>Código</th>
+							<th>Nombre</th>
+							<th>Desde</th>
+							<th>Hasta</th>
+							<th>Salida</th>
+							<th>Llegada</th>
+							<th>Dias</th>		
+							<th>Creador</th>					
+						</tr>
+					</thead>
+					<tbody>
+							<tr>
+								<td>Crea un registro</td>
+							</tr>			
+					</tbody>				
+				</table>
+			</center>
+		</div>
+	</div>
+	
+	
+</div>
+	<script src="D:\Desktop\l_Proyecto_web\JS\seccionUsuario.js"></script>
+</body>
+
+<html>

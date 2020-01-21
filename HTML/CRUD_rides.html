@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Rides</title>
+	<link rel="stylesheet" type="text/css" href="D:\Desktop\l_Proyecto_web\Imagenes\fonts\style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="D:\Desktop\l_Proyecto_web\boostrap\bootstrap-4.4.1-dist\css\bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="D:\Desktop\l_Proyecto_web\CSS\CRUD_rides.css">
+	
+</head>
+
+<body onload = "cambiarNombre2(); crearLista(); cargarRides(); ">
+	<div class="secciones">
+
+		<div>
+			<form class="flecha">
+
+							<form class="form-inline">
+										  							  	
+							</form>	
+							<div class="pequeBus">
+									<input class="form-control mr-sm-2" placeholder="Search" aria-label="Search" id ="hacerBusqueda">
+								</div>
+							  	<div class="pequeBus bot">
+									<button class="btn btn-outline-success my-2 my-sm-0" onclick="bucarRideporCodigo()">Search</button>
+								</div>	
+				<div class="img">
+					<a href="D:\Desktop\l_Proyecto_web\HTML\Seccion_Usuario.html"><img src ="D:\Desktop\l_Proyecto_web\Imagenes\1342944-128.png" ></img></br></a>
+				</div>
+				<h1 class="ticoR">TicoRides</h1>
+			</form>
+		</div>
+
+		<div class="imaEt">
+				<a href = "D:\Desktop\l_Proyecto_web\HTML\Configuracion.html"><img src ="D:\Desktop\l_Proyecto_web\Imagenes\hombre (1).png" ></img></br></a>
+			<div class="imaEt Et">
+				<label id="cambiarUsu2">user</label>
+			</div>			
+		</div>
+
+		<div class="mensaje">
+			<center>
+					<p class="smsT">
+						Con TicoRides crea y consigue los mejores rides!!! Pruebalo tú mismo
+					</p>
+			</center>
+			
+		</div>
+		
+		<div class = "divTabla">
+			<a href="javascript:abrir_ventana_Crear()" class="boton"><span class="icon-add-to-list"></span></a>
+			<a href="javascript:cargarRides();" class="boton dos"><span class="icon-upload"></span></a></br>
+			<center>
+				<table id="tbrides">
+					<thead>
+						<tr>
+							<th>Código</th>
+							<th>Nombre</th>
+							<th>Desde</th>
+							<th>Hasta</th>
+							<th>Salida</th>
+							<th>Llegada</th>
+							<th>Dias</th>		
+							<th>Opciones</th>	
+										
+						</tr>
+					</thead>
+					<tbody>
+							<tr>
+								<td>Crea un registro</td>
+							</tr>			
+					</tbody>				
+				</table>
+			</center>
+		</div>
+		
+	</div>
+
+
+
+	<div class = "ventana" id ="abrir_ventana_para_crear">
+		<!--Entradas-->
+		<div class="entradasj">
+				<div class="pequeInp">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <span class="input-group-text" id="basic-addon1">Codigo:</span>
+								</div>
+								<input type="text"  class="form-control peque" aria-describedby="basic-addon1" id="cod">
+						</div>
+						<div class="pequeInp mover">
+							<div class="input-group mb-3" >
+									<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1">Nombre:</span>
+									</div>
+									<input type="text"  class="form-control e"  aria-describedby="basic-addon1" id="nom">
+							</div>
+						</div>
+				</div>
+				<!--Entradas lugares-->
+				<div class="pequeInp lugares">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <span class="input-group-text" id="basic-addon1">Desde:</span>
+								</div>
+								<input type="text"  class="form-control peque" aria-describedby="basic-addon1" id="desde">
+						</div>
+						<div class="pequeInp mover">
+							<div class="input-group mb-3" >
+									<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1">Hasta:</span>
+									</div>
+									<input type="text"  class="form-control e"  aria-describedby="basic-addon1" id="hasta">
+							</div>
+						</div>
+				</div>
+				<!--tiempo-->
+				<div class="tiempo">
+						<div class="input-group mb-3" >
+								<div class="input-group-prepend">
+								  <span class="input-group-text" id="basic-addon1">Hora de salida:</span>
+								</div>
+								<input type="time"  class="form-control e"  aria-describedby="basic-addon1" id="hSalida">
+						</div>
+						<div class="tiempo mover">
+							<div class="input-group mb-3" >
+									<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1">Hora de salida:</span>
+									</div>
+									<input type="time"  class="form-control e"  aria-describedby="basic-addon1"id="hLlegada">
+							</div>
+						</div>
+				</div>
+		</div>
+		
+
+		<!--Checkbox-->
+		<div class="moverCheck">
+				<div class="pequeCheck">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+									<input type="checkbox" aria-label="Checkbox for following text input" id="l">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with checkbox"  placeholder="L">
+						</div>
+						
+				</div>
+				<div class="pequeCheck martes">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+									<input type="checkbox" aria-label="Checkbox for following text input" id="k">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="K" >
+						</div>
+				</div>
+				<div class="pequeCheck miercoles">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+									<input type="checkbox" aria-label="Checkbox for following text input" id="m">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="M" >
+						</div>
+				</div>
+				<div class="pequeCheck jueves">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+									<input type="checkbox" aria-label="Checkbox for following text input" id="j">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="J" >
+						</div>
+				</div>
+				<div class="pequeCheck viernes">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+									<input type="checkbox" aria-label="Checkbox for following text input" id="v">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="V" >
+						</div>
+				</div>
+				<div class="pequeCheck sabado">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+									<input type="checkbox" aria-label="Checkbox for following text input" id="s">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="S" >
+						</div>
+				</div>
+				<div class="pequeCheck domingo">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+									<input type="checkbox" aria-label="Checkbox for following text input" id="d">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="D" >
+						</div>
+				</div>
+		</div>
+		
+		<div id ="cerrar"> 
+					<a href="javascript:cerrar_ventana_Crear()">
+					<img src="D:\Desktop\l_Proyecto_web\Imagenes\error .png" ></a>
+		</div>
+		<div class="btnRegistrar">
+				<button type="button" class="btn btn-primary btn-lg" onclick="registrarRide()">Crear ride</button>
+		</div>
+	</div>
+<!--editar-------------------------------------------------------------------------------------------------------------------->
+	<div class = "ventana" id ="abrir_ventana_para_editar">
+		<!--Entradas-->
+		<div class="entradasj">
+				<div class="pequeInp">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <span class="input-group-text" id="basic-addon1">Codigo:</span>
+								</div>
+								<input  id="codE" type="text"  class="form-control peque" aria-describedby="basic-addon1" id="codE">
+						</div>
+						<div class="pequeInp mover">
+							<div class="input-group mb-3" >
+									<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1">Nombre:</span>
+									</div>
+									<input type="text"  class="form-control e"  aria-describedby="basic-addon1" id="nomE">
+							</div>
+						</div>
+				</div>
+				<!--Entradas lugares-->
+				<div class="pequeInp lugares">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <span class="input-group-text" id="basic-addon1">Desde:</span>
+								</div>
+								<input type="text"  class="form-control peque" aria-describedby="basic-addon1" id="desdeE">
+						</div>
+						<div class="pequeInp mover">
+							<div class="input-group mb-3" >
+									<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1">Hasta:</span>
+									</div>
+									<input type="text"  class="form-control e"  aria-describedby="basic-addon1" id="hastaE">
+							</div>
+						</div>
+				</div>
+				<!--tiempo-->
+				<div class="tiempo">
+						<div class="input-group mb-3" >
+								<div class="input-group-prepend">
+								  <span class="input-group-text" id="basic-addon1">Hora de salida:</span>
+								</div>
+								<input type="time"  class="form-control e"  aria-describedby="basic-addon1" id="hSalidaE">
+						</div>
+						<div class="tiempo mover">
+							<div class="input-group mb-3" >
+									<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1">Hora de salida:</span>
+									</div>
+									<input type="time"  class="form-control e"  aria-describedby="basic-addon1"id="hLlegadaE">
+							</div>
+						</div>
+				</div>
+		</div>
+		
+
+		<!--Checkbox-->
+		<div class="moverCheck">
+				<div class="pequeCheck">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+									<input type="checkbox" aria-label="Checkbox for following text input" id="lE">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with checkbox"  placeholder="L">
+						</div>
+						
+				</div>
+				<div class="pequeCheck martes">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+									<input type="checkbox" aria-label="Checkbox for following text input" id="kE">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="K" >
+						</div>
+				</div>
+				<div class="pequeCheck miercoles">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+									<input type="checkbox" aria-label="Checkbox for following text input" id="mE">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="M" >
+						</div>
+				</div>
+				<div class="pequeCheck jueves">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+									<input type="checkbox" aria-label="Checkbox for following text input" id="jE">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="J" >
+						</div>
+				</div>
+				<div class="pequeCheck viernes">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+									<input type="checkbox" aria-label="Checkbox for following text input" id="vE">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="V" >
+						</div>
+				</div>
+				<div class="pequeCheck sabado">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+									<input type="checkbox" aria-label="Checkbox for following text input" id="sE">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="S" >
+						</div>
+				</div>
+				<div class="pequeCheck domingo">
+						<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+									<input type="checkbox" aria-label="Checkbox for following text input" id="dE">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="D" >
+						</div>
+				</div>
+		</div>
+		
+		<div id ="cerrar"> 
+					<a href="javascript:cerrar_ventana_Crear()">
+					<img src="D:\Desktop\l_Proyecto_web\Imagenes\error .png" ></a>
+		</div>
+		<div class="btnRegistrar">
+				<button type="button" class="btn btn-primary btn-lg" onclick="editar()">Editar ride</button>
+		</div>
+
+		<div id ="cerrar"> 
+				<a href="javascript:cerrarVentaEditar()">
+				<img src="D:\Desktop\l_Proyecto_web\Imagenes\error .png"></a>
+		</div>
+	</div>
+
+	  <!-- Coded with love by Mutiullah Samim-->
+	  <body>
+	
+	   
+
+	<script src="D:\Desktop\l_Proyecto_web\JS\CRUDrides.js"></script>
+	
+</body>
+
+<html>

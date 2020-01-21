@@ -1,0 +1,482 @@
+*
+{
+	margin:0;
+	padding:0;
+	-webkid-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body
+{
+	
+	background-color:#94D3E3;
+	font-family:open sans;
+}
+
+ul li a
+{
+	color:#fff;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	position:relative;
+	text-align:center;
+	text-decoration:none;
+}
+
+ul.tabs
+{
+	width:100%;
+	background: #363636;
+	list-style:none;
+	display:flex;
+}
+ul.tabs li
+{
+	width:18%;
+	
+}
+ul.tabs li a
+{
+	color:#fff;
+	text-decoration:none;
+	font-size:16px;
+	text-align:center;
+	display:block;
+	padding: 20px 0px;
+	
+}
+ul.tabs li a .tab-text
+{
+	margin-left:8px;
+	
+}
+
+.active
+{
+	background:#0984cc;
+}
+
+
+.formula
+{
+	position:relative;
+	background-color:#363636;
+	width:70%;
+	height:450px;
+	bottom:70px;
+	border-radius:10px;
+}
+table
+{
+	position:relative;
+	border-radius:5px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align:left;
+	border-collapse:collapse;
+	background-color:white;
+	width:70%;
+	bottom:40px;
+}
+th,td
+{
+	padding:20px; 
+}
+thead
+{
+	background-color:#3678A7;
+	border-bottom:solid 5px #0F362D;
+	color:white;
+}
+tr:nth-child(even)
+{
+	background-color:#ddd;
+}
+
+tr:hover td
+{
+	background-color:#83BCE4;
+	color:white;
+}
+
+.grande
+{
+	position:relative;
+	height:100px;
+	width:79%;
+	top:85px;
+	right:90px;
+	background-color:white;
+	color:black;		
+	border-radius:5px;
+	font-size:20px;
+}
+.chequear
+{
+	position:relative;
+	left:380px;
+	bottom:135px;
+	margin:10px;
+
+	color:white;
+}
+
+.etiquetas
+{
+	color:white;
+	position:relative;
+
+}
+.tiempo
+{
+	position:relative;
+	width:230px;
+	font-size:25px;	
+	top: 150px;
+	left: 120px;
+}
+
+.button
+{
+	left:-90px;
+	bottom:100px;
+	border-radius:5px;
+	background:#7f8c8d;
+	color:#fff;
+	display:inline-block;
+	font-size:20px;
+	margin:20px;
+	padding:10px 0;
+	position:relative;
+	text-align:center;
+	width:130px;
+	text-decoration:none;
+	box-shadow: 0px 3px 0px #373c3c;
+}
+.button span
+{
+	margin-right:10px;
+}
+
+.button.green
+{
+	background:#26E61C;
+	box-shadow: 0px 3px 0px #266792; 
+}
+.button.red
+{
+	background:#FA0C0C;
+	box-shadow: 0px 3px 0px #266792; 
+}
+
+
+.imagen
+{
+	position:relative;
+	left:1200px;
+	top:20px;
+}
+
+.imagenEti
+{
+	position:relative;
+	color:white;
+	left:1227px;
+	top:20px;
+	
+}
+.imagenEt
+{
+	position:relative;
+	right:500px;
+	bottom:1000px;
+	
+}
+.entradaEliminar
+{
+	position:relative;
+	background-color:white;
+	color:black;		
+	border-radius:5px;
+	font-size:20px;
+	padding:20px;
+	height:5px;
+	width:200px;
+	margin:30px;	
+	right:38px;
+	top:150px;
+}
+
+.button.red.eli
+{
+	position:relative;
+	width:200px;
+	bottom:-250px;
+	left:-290px;
+}
+
+.etiquetaEliminar
+{
+	position:relative;
+	color:white;
+	font-family:arial;
+	font-size:20px;
+	left:250px;
+	top:50px;
+}
+
+
+
+.ventana
+{
+	position: absolute;
+	background:#3EA6C1;
+	width: 700px;
+	height: 400px;
+	border-radius: 15px;
+	left: 25%;
+	bottom: 15%;
+	display: none;
+}
+
+
+
+
+
+#cerrar
+{
+	position: absolute;
+	right: 5px;
+	top: 1px;
+}
+
+.button-primary
+{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background: white;
+	border: none;
+	border-radius: 5px;
+	margin: 2px;
+	padding: 4px;
+}
+.button-primary:hover
+{
+	background: #0e5061;
+	color: #ddd;
+
+}
+
+.agregar
+{
+	position: absolute;
+	left: 140px;
+	top: 130px;
+}
+
+
+
+.boton
+{
+	position:relative;
+	top: 20px;
+	left: 895px;
+	border-radius:5px;
+	background:#3774E0;
+	color:#fff;
+	display:inline-block;
+	font-size:20px;
+	margin:10px;
+	padding:10px 0;
+	text-align:center;
+	width:50px;
+	text-decoration:none;
+	box-shadow: 0px 3px 0px #373c3c;
+}
+.boton.dos
+{
+	position:relative;
+	top: 80px;
+	left: 822px;
+}
+.entradas
+{
+	margin: 10px;
+	border-radius: 5px;
+	width: 150px;
+	height: 30px;
+}
+
+.pequeInp
+{
+  position: absolute;
+  width: 230px;
+  height: 100px;
+  top: 50px;
+  left: 120px;
+}
+.pequeBus
+{
+  position: absolute;
+  margin: 0;
+  width: 230px;
+  height: 100px;
+  top: 45px;
+  left: 550px;
+}
+.pequeBus.bot
+{
+  position: absolute;
+  width: 230px;
+  height: 100px;
+  top: 45px;
+  left: 780px;
+}
+.pequeInp.mover
+{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 235px;
+}
+.pequeInp.lugares
+{
+	position: absolute;
+	top: 100px;
+}
+.pequeCheck
+{
+
+	position: absolute;
+  	width: 75px;
+	height: 100px;
+	top:100px;
+}
+
+
+.pequeCheck.martes
+{
+	left: 80px;
+}
+
+.pequeCheck.miercoles
+{
+	left: 160px;
+}
+.pequeCheck.jueves
+{
+	left: 240px;
+}
+.pequeCheck.viernes
+{
+	left: 320px;
+}
+.pequeCheck.sabado
+{
+	left: 400px;
+}
+.pequeCheck.domingo
+{
+	left: 480px;
+}
+.moverCheck
+{
+	position: absolute;
+	left: 70px;
+	top:150px;
+	
+}
+.tiempo.mover
+{
+	position: absolute;
+	top: 0px;
+	left: 235px;
+}
+
+.entradasj
+{
+	position: absolute;
+	top: 50px;
+}
+.btnRegistrar
+{
+	position: absolute;
+	top: 300px;
+	left: 290px;
+}
+
+.flecha
+{
+	position: relative;
+	background: white;
+	width: 100%;
+	height: 120px;
+
+}
+.img
+{
+	position: absolute;	
+	top: -5px;
+}
+.ticoR
+{
+	position: absolute;
+	left: 120px;
+	top:40px;
+	font-size: 50px;
+}
+.imaEt
+{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 1200px;
+	top:30px;
+}
+.imaEt.Et
+{
+	position: absolute;
+	left:-50px;
+	font-size: 30px;
+	top: 15px;
+}
+.divTabla
+{
+	position: absolute;
+	top:175px;
+	left: 20px;
+}
+#tbrides
+{
+	width: 900px;
+}
+.mensaje
+{
+	position: absolute;
+	background: white;
+	border-radius: 10px;
+	width: 300px;
+	height: 400px;
+	top: 200px;
+	left: 1000px;
+}
+.smsT
+{
+	position: absolute;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 43px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
